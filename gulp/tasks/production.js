@@ -1,3 +1,3 @@
 var gulp = require('gulp');
 
-gulp.task('production', ['images', 'minifyCss', 'uglifyJs']);
+gulp.task('production', ['images', 'shaders', 'minifyCss', 'uglifyJs']);

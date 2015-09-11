@@ -35,6 +35,10 @@ module.exports = {
         src: src + "/images/**",
         dest: dest + "/images"
     },
+    shaders: {
+        src: src + "/shaders/**",
+        dest: dest + "/shaders"
+    },
     markup: {
         src: src + "/html/**/*.html",
         dest: dest

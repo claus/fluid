@@ -40,7 +40,7 @@ server.use(function (req, res, next) {
             ));
 
             var html = React.renderToStaticMarkup(HtmlComponent({
-                title: "react-flux-gulp-starter",
+                title: "Fluid Demo",
                 state: res.locals.state,
                 markup: markup
             }));

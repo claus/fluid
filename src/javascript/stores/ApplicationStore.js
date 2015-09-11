@@ -33,6 +33,7 @@ class ApplicationStore extends BaseStore {
 }
 
 ApplicationStore.storeName = 'ApplicationStore';
+
 ApplicationStore.handlers = {
     'CHANGE_ROUTE': 'onChangeRoute'
 };
