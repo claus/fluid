@@ -9,6 +9,7 @@ var config = require('../config');
 
 var sassTask = require('./sass');
 var imagesTask = require('./images');
+var shadersTask = require('./shaders');
 
 gulp.task('watch', ['watchify'], function (callback) {
 
@@ -21,6 +22,11 @@ gulp.task('watch', ['watchify'], function (callback) {
         name: 'watch-images',
         read: false
     }, imagesTask);
+
+    watch(config.shaders.src, {
+        name: 'watch-shaders',
+        read: false
+    }, shadersTask);
 
     callback();
 
